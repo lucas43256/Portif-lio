@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucas Albuquerque — Portfólio</title>
+<meta name="description" content="Portfólio de Lucas Albuquerque, estudante de TI no Cotemig. HTML, CSS, JavaScript e C#.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="brand">
+      <span class="brand__name">Lucas Albuquerque</span>
+      <span class="brand__role">TI · Cotemig</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre" data-nav>Sobre</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projetos" data-nav>Projetos</a>
+      <a href="#contato" data-nav>Contato</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar modo claro" title="Ativar modo claro">
+        <img id="themeIcon" src="moon.png" alt="Lua minguante">
+      </button>
+    </nav>
+    
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__glow" id="heroGlow" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="badge">
+        <span class="badge__dot"></span>
+        Disponível para estágio
+      </div>
+
+      <h1 class="hero__title">
+        <span class="reveal-line">Oi, eu sou o</span>
+        <span class="reveal-line hero__name">Lucas</span>
+        <span class="reveal-line hero__name">Albuquerque</span>
+      </h1>
+
+      <p class="hero__text reveal-fade">
+        Prazer, me chamo Lucas Albuquerque e tenho 16 anos.
+        Sou apaixonado por tecnologia.
+        Tenho experiência em HTML, CSS, JavaScript e C#.
+      </p>
+
+      <div class="hero__actions reveal-fade">
+        <a href="#projetos" class="btn btn--primary">
+          <span>Ver Projetos</span>
+        </a>
+        <a href="#contato" class="btn btn--ghost">
+          <span>Falar comigo</span>
+        </a>
+      </div>
+
+      <div class="stats reveal-fade">
+        <div class="stat-card" data-tilt>
+          <span class="stat-card__num" data-count="4" data-suffix="+">0</span>
+          <span class="stat-card__label">Projetos</span>
+        </div>
+        <div class="stat-card" data-tilt>
+          <span class="stat-card__num" data-count="8" data-suffix="+">0</span>
+          <span class="stat-card__label">Tecnologias</span>
+        </div>
+        <div class="stat-card" data-tilt>
+          <span class="stat-card__num" data-count="1.5" data-suffix="" data-decimal="1">0</span>
+          <span class="stat-card__label">Anos estudando</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="sobre">
+    <div class="container about">
+      <div class="about__main reveal-up">
+        <span class="eyebrow">01 — Sobre mim</span>
+        <h2 class="section-title">
+          Muito mais do que<br><span class="text-gradient">linhas de código</span>
+        </h2>
+        <p class="about__p">
+          Cresci em Belo Horizonte e sempre tive curiosidade por como as coisas funcionam.
+        </p>
+        <p class="about__p">
+          Programar virou um novo jeito de ver as coisas. Gosto de ver e saber como cada coisa funciona por dentro.
+        </p>
+
+        <span class="about__sub-label">Fora do computador</span>
+        <div class="tag-row">
+          <span class="pill">Games</span>
+          <span class="pill">Música</span>
+          <span class="pill">Ia &amp; Futuro</span>
+          <span class="pill">Maker</span>
+        </div>
+      </div>
+
+      <div class="journey reveal-up">
+        <span class="eyebrow">Minha Jornada</span>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__dot">25</span>
+            <div class="timeline__body">
+              <h3>Entrei no Cotemig <span class="text-gradient-inline">2025</span></h3>
+              <p>Escolhi entrar no Cotemig porque sempre me interessei por tecnologia, e queria juntar isso com o ensino médio.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot">26</span>
+            <div class="timeline__body">
+              <h3>Primeiros projetos reais <span class="text-gradient-inline">2026</span></h3>
+              <p>Html, java, bancos de dados, C# Linux...</p>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--active">
+            <span class="timeline__dot timeline__dot--active">26</span>
+            <div class="timeline__body">
+              <h3>Agora <span class="text-gradient-inline">2026</span></h3>
+              <p>Buscando minha primeira oportunidade profissional. Quero um estágio onde eu possa contribuir de verdade e continuar crescendo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <span class="eyebrow reveal-up">02 - Habilidade</span>
+      <h2 class="section-title reveal-up">Skills</h2>
+      <p class="section-sub reveal-up">
+        Cada tecnologia aqui tem uma história — erros, tutoriais assistidos e projetos que funcionaram.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>C#</h3>
+          <span class="skill-card__pct">80%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="80"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>HTML & CSS</h3>
+          <span class="skill-card__pct">85%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="85"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>JavaScript</h3>
+          <span class="skill-card__pct">75%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="75"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>Linux</h3>
+          <span class="skill-card__pct">40%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="40"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>MySQL</h3>
+          <span class="skill-card__pct">70%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="70"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-tilt>
+          <h3>Redes</h3>
+          <span class="skill-card__pct">60%</span>
+          <div class="skill-bar"><div class="skill-bar__fill" data-fill="60"></div></div>
+        </div>
+      </div>
+
+      <span class="about__sub-label reveal-up">Ferramentas do dia a dia</span>
+      <div class="tag-row reveal-up">
+        <span class="pill pill--mono">VS CODE</span>
+        <span class="pill pill--mono">Figma</span>
+        <span class="pill pill--mono">VS STUDIO</span>
+        <span class="pill pill--mono">MySQL</span>
+        <span class="pill pill--mono">VirtualBox</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="projetos">
+    <div class="container">
+      <span class="eyebrow reveal-up">03 - Projetos</span>
+      <h2 class="section-title reveal-up">Projetos feitos</h2>
+
+      <div class="projects-grid">
+        <a href="">
+        <article class="project-card reveal-up" data-tilt>
+          <span class="status status--done">Concluído</span>
+          <h3>Sistema de Gestão Monetário</h3>
+          <p>Criado para ajudar as pessoas a organizar e fazer a gestão correta do seu dinheiro.</p>
+          <div class="tag-row">
+            <span class="pill pill--mono">App Inventor</span>
+          </div>
+        </article>
+      </a>
+        <a href="https://lucas-albuquerque-16.github.io/Sportz-Sneakers/">
+        <article class="project-card reveal-up" data-tilt>
+          <span class="status status--done">Concluído</span>
+          <h3>Sportz Sneakers</h3>
+          <p>Site criado para venda de tênis de alta performance e conforto.</p>
+          <br>
+          <div class="tag-row">
+            
+            <span class="pill pill--mono">Figma</span>
+            <span class="pill pill--mono">HTML</span>
+            <span class="pill pill--mono">CSS</span>
+          
+          </div>
+        </article>
+        </a>
+        <a href="">
+        <article class="project-card reveal-up" data-tilt>
+          <span class="status status--done">Concluído</span>
+          <h3>Portifólio</h3>
+          <p>Criado para mostrar minhas habilidades e para mostrar projetos criados por mim.</p>
+          <div class="tag-row">
+            <span class="pill pill--mono">HTML</span>
+            <span class="pill pill--mono">CSS</span>
+            <span class="pill pill--mono">JavaScript</span>
+          </div>
+        </article>
+      </a>
+      <a href="">
+        <article class="project-card reveal-up" data-tilt>
+          <span class="status status--progress">Em andamento</span>
+          <h3>Integração Banco de Dados</h3>
+          <p>Começando a integrar Banco de dados em códigos feitos.</p>
+          <br>
+          <div class="tag-row">
+            <span class="pill pill--mono">C#</span>
+            <span class="pill pill--mono">MySQL</span>
+          </div>
+        </article>
+      </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--contact" id="contato">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="container contact">
+      <span class="eyebrow reveal-up">04 - Contato</span>
+      <h2 class="section-title reveal-up">Onde entrar em contato</h2>
+      <p class="section-sub reveal-up">
+        Estou à procura do meu primeiro estágio e aberto a projetos colaborativos. Se tiver uma ideia legal ou uma oportunidade, me mande mensagem
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal-up" data-tilt href="mailto:albuquerque.mlucas@gmail.com">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">albuquerque.mlucas@gmail.com</span>
+        </a>
+
+        <a class="contact-card reveal-up" data-tilt href="https://github.com/Lucas-albuquerque-16" target="_blank" rel="noopener">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.35-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.21 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.19C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
+          </span>
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">Lucas-albuquerque-16</span>
+        </a>
+
+        <a class="contact-card reveal-up" data-tilt href="https://www.linkedin.com/in/lucas-albuquerque-69aa12367/?isSelfProfile=true" target="_blank" rel="noopener">
+          <span class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.94 6.5a1.94 1.94 0 11-3.88 0 1.94 1.94 0 013.88 0zM3.5 9h3v11.5h-3V9zm6 0h2.88v1.57h.04c.4-.76 1.38-1.57 2.84-1.57 3.04 0 3.6 2 3.6 4.6v6.9h-3v-6.12c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.6-2.35 3.24v6.22h-3V9z" fill="currentColor"/></svg>
+          </span>
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">lucas-albuquerque-69aa12367</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<section class="section section--alt">
+    <div class="container">
+      <div class="form-wrap reveal-up">
+        <span class="eyebrow">Formulário</span>
+        <h2 class="section-title">Envie uma mensagem</h2>
+        
+
+        <form id="contactForm" class="form-card" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome" class="form-label">Nome <span class="req">*</span></label>
+              <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" autocomplete="name" required>
+              <span class="form-error" id="err-nome"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone" class="form-label">Telefone <span class="req">*</span></label>
+              <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" autocomplete="tel" inputmode="numeric" maxlength="15" required>
+              <span class="form-error" id="err-telefone"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail <span class="req">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+            <span class="form-error" id="err-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem" class="form-label">Mensagem <span class="req">*</span></label>
+            <textarea id="mensagem" name="mensagem" class="form-input form-textarea" rows="6" placeholder="Conte um pouco sobre a oportunidade ou ideia..." required></textarea>
+            <div class="form-hint">
+              <span class="form-error" id="err-mensagem"></span>
+              <span class="char-count" id="charCount">0/500</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">
+            <span>Enviar mensagem</span>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__name text-gradient-inline">Lucas Albuquerque</p>
+  <p class="footer__copy">© 2026 · Lucas Albuquerque</p>
+</footer>
+
+<script src=java.js></script>
+</body>
+</html>
